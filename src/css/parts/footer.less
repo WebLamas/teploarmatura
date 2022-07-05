@@ -28,55 +28,39 @@
 }
 
 .contact{
-	&_phone{
-		font-size: 15px;
-		letter-spacing: 0.01em;
+	font-size: 15px;
+	letter-spacing: 0.01em;
+	&:before{
+		content:'';
+		display:block;
+		width: 20px;
+		height: 20px;
 	}
 	&_phone:before{
-		content:'';
-		display:block;
-		width: 20px;
-		height: 20px;
 		background: url(../images/sprite.svg) -9px -206px;
 	}
-	&_mail{
-		font-size: 15px;
-		letter-spacing: 0.01em;
-	}
 	&_mail:before{
-		content:'';
-		display:block;
-		width: 20px;
-		height: 20px;
 		background: url(../images/sprite.svg) -37px -206px;
 	}
 }
 
 .soc-blue{
-	&_fb{
-		background: #0061dd;
+	background: #0061dd;
+	&:before{
+		content:'';
+		display:block;
+		width: 25px;
+		height: 25px;
 	}
 	&_fb:before{
-		content:'';
-		display:block;
-		width: 25px;
-		height: 25px;
 		background: url(../images/sprite.svg) -9px -284px;
 	}
-	&_yt{
-		background: #0061dd;
-	}
 	&_yt:before{
-		content:'';
-		display:block;
-		width: 25px;
-		height: 25px;
 		background: url(../images/sprite.svg) -43px -284px;
 	}
 }
 
 .weblamas{
-	font-family: Montserrat;
 	font-size: 14px;
 }
 

@@ -1,24 +1,44 @@
 .segment-advantages{
 	background: #ffffff;
+
+	& .wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 .advantage{
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+	"a b c"
+	". d d";
 	&__num{
 		font-weight: 900;
 		font-size: 51px;
 		color: #d2e5ff;
+		white-space: nowrap;
+		text-align: end;
+		grid-area: a;
+		margin-right: 11px;
 	}
 	&__ico{
 		width: 66px;
 		height: 66px;
+		grid-area: b;
+		margin-right: 15px;
 	}
 	&__word{
 		font-weight: 700;
 		font-size: 30px;
 		color: #d2e5ff;
+		grid-area: c;
+		text-align: start;
 	}
 	&__desc{
 		font-size: 16px;
+		grid-area: d;
 	}
 	&_assort &__ico{
 		background: url(../images/sprite.svg) -291px -112px;

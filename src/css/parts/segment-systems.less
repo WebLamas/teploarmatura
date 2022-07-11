@@ -1,10 +1,12 @@
 .segment-systems{
 	background: #f3f8ff;
+	padding: 55px 0 60px;
 	&__h2{
 		text-align: center;
 		font-weight: 700;
 		font-size: 38px;
 		color: #0061dd;
+		margin-bottom: 11px;
 	}
 	&__desc{
 		text-align: center;
@@ -13,9 +15,19 @@
 		font-size: 16px;
 		letter-spacing: 0.04em;
 	}
+	&__text {
+
+	}
+	&__items {
+		margin-top: 40px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px 50px;
+	}
 }
 
 .system{
+	text-decoration: none;
 	&__caption{
 		font-weight: 600;
 		font-size: 19px;

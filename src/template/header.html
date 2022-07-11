@@ -1,8 +1,16 @@
 <header class="header">
 	<div class="header__top">
 		<div class="wrapper">
+			<a class="logo" href="#"></a>
 			<a href="#" class="button">B2B портал</a>
-			<div class="langselector">Українська</div>
+			<div class="langselector">
+				<select name="example">
+					<option value="1">Українська</option>
+					<option value="2">Англійська</option>
+					<option value="3">Українська</option>
+					<option value="4">Англійська</option>
+				</select>
+			</div>
 			<a class="callback" href="#">Замовити виклик</a>
 			<div class="soc-wr">
 				<a href="#" class="soc soc_tg"></a>
@@ -13,7 +21,9 @@
 	</div>
 	<div class="header__menu">
 		<div class="wrapper">
-			<div><?php echo wp_nav_menu(array('theme_location'=>'menu-main','container'=>'nav','container_class'=>'navbar','menu_class'=>'menu menu-main'));?></div>
+			<div>
+				<?php echo wp_nav_menu(array('theme_location'=>'menu-main','container'=>'nav','container_class'=>'navbar','menu_class'=>'menu menu-main'));?>
+			</div>
 		</div>
 	</div>
 </header>

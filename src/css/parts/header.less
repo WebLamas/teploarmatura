@@ -1,9 +1,56 @@
 .header{
 	&__top{
 		background: #ffffff;
+		border-bottom: 1px solid #E2EEFF;
 	}
 	&__menu{
 		background: #ffffff;
+		& .wrapper {
+
+			padding: 9px 0 !important;
+		}
+	}
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+		padding: 15px 0;
+	}
+	.logo {
+		width: 257.33px;
+		height: 34px;
+		background: url(../images/logo.svg) 0 0;
+		margin-right: 40px;
+	}
+	.button {
+		background: #FF8303;
+		color: #fff;
+		padding: 13px 32px;
+	}
+	.langselector {
+		&::before {
+			display: none;
+		}
+		margin-left: auto;
+	}
+	.callback {
+		display: flex;
+		align-items: center;
+		margin-right: 33px;
+		margin-left: 40px;
+		&::before {
+			margin-right: 10px;
+		}
+	}
+	.soc-wr {
+		&>:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+	.soc {
+		width: 20px;
+		height: 20px;
+		display: inline-block;
 	}
 }
 

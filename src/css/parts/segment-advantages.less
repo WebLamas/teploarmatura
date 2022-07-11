@@ -1,16 +1,19 @@
 .segment-advantages{
 	background: #ffffff;
-
+	padding: 115px 0 90px;
 	& .wrapper {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
+		column-gap: 75px;
+		row-gap: 65px;
 	}
 }
 
 .advantage{
 	display: grid;
 	align-items: center;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: max-content max-content 1fr;
+	row-gap: 16px;
 	grid-template-areas:
 	"a b c"
 	". d d";
@@ -39,6 +42,7 @@
 	&__desc{
 		font-size: 16px;
 		grid-area: d;
+		max-width: 210px;
 	}
 	&_assort &__ico{
 		background: url(../images/sprite.svg) -291px -112px;

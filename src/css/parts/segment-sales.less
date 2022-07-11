@@ -1,13 +1,34 @@
 .segment-sales{
 	background: #ffffff;
+	@media (min-width: 780px) {
+		height: 100%;
+	}
+	& .wrapper {
+		padding: 90px 0;
+	}
 }
 
 .sales{
+	text-decoration: none;
+	display: flex;
 	background: #0061dd;
+	&:not(:last-child) {
+		margin-bottom: 70px;
+	}
+	& .sales__caption,
+	& .sales__desc,
+	& .sales__button {
+		margin-left: 60px;
+	}
+	&__text {
+		flex-basis: 100%;
+		padding: 47px 0;
+	}
 	&__caption{
 		font-weight: 700;
 		font-size: 33px;
 		color: #ffffff;
+		margin-bottom: 12px;
 	}
 	&__desc{
 		font-weight: 500;
@@ -15,6 +36,24 @@
 		font-size: 15px;
 		letter-spacing: 0.04em;
 		color: #ffffff;
+		margin-bottom: 26px;
+	}
+	&__button {
+		background: #FF8303;
+		padding: 18px 45px;
+	}
+	&__image {
+		flex-basis: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&_orange {
+
+		background: #FF8303;
+		& .sales__button {
+			background: #0061DD;
+		}
 	}
 }
+
 

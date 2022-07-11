@@ -1,17 +1,54 @@
-<?php $templates=WeblamasTemplate::get_subtemplates();?>
+<?php $templates = WeblamasTemplate::get_subtemplates(); ?>
 
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<?php wp_head();?>
-</head>
-<body>
-	<?php require(THEMEPATH.'template/header.html');?>
-	<?php WeblamasTemplate::loadTemplate($templates);?>
-	<?php require(THEMEPATH.'template/footer.html');?>
-	<?php echo do_shortcode('[contact-form-7 id="form-popup"]');?>
-	
 
+<head>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<?php wp_head(); ?>
+</head>
+
+<body>
+
+	<main class="page page-swiper">
+		<div class="page__wrapper">
+			<div class="page__screen screen">
+				<div class="screen__content">
+					<?php require(THEMEPATH . 'template/header.html'); ?>
+					<?php require(THEMEPATH . 'template/segment-main.html'); ?>
+					<?php require(THEMEPATH . 'template/segment-categories.html'); ?>
+				</div>
+			</div>
+			<div class="page__screen screen">
+				<div class="screen__content">
+					<?php require(THEMEPATH . 'template/segment-systems.html'); ?>
+				</div>
+			</div>
+			<div class="page__screen screen">
+				<div class="screen__content">
+					<?php require(THEMEPATH . 'template/segment-advantages.html'); ?>
+					<?php require(THEMEPATH . 'template/segment-partners.html'); ?>
+				</div>
+			</div>
+			<div class="page__screen screen">
+				<div class="screen__content">
+					<?php require(THEMEPATH . 'template/segment-sales.html'); ?>
+				</div>
+			</div>
+			<div class="page__screen screen">
+				<div class="screen__content">
+					<?php require(THEMEPATH . 'template/segment-projects.html'); ?>
+				</div>
+			</div>
+		</div>
+		<div class="page__scroll"></div>
+	</main>
+
+
+	<?php WeblamasTemplate::loadTemplate($templates); ?>
+
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
-<?php wp_footer();?>
-</html> 
+<?php wp_footer(); ?>
+
+</html>

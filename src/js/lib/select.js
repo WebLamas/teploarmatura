@@ -220,6 +220,15 @@ function readySelect() {
             }, duration);
         }
     }
+
+
+    // let subMenu = document.querySelector('.menu-item ul');
+
+    // subMenu.addEventListener('mouseenter', function () {
+    //     _slideUp(subMenu, 100);
+    // });
+
+
     let _slideDown = (target, duration = 500) => {
         if (!target.classList.contains('_slide')) {
             target.classList.add('_slide');

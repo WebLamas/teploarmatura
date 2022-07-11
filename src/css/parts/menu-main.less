@@ -34,27 +34,33 @@
 	@media (any-hover: hover) {
 		&:hover {
 			&>ul {
-				display: block;
+
 			}
 		}
 	}
 	&>ul { // sublist
-			display: none;
-			position: absolute;
-			top: 40px;
+		display: none;
+			flex-direction: column;
 			padding-left: 0;
-			border: 1px solid #d9d9d9;
-			padding: 10px 15px;
+			padding: 5px 15px;
 			background-color: #fff;
+			z-index: 20;
+			margin: 0;
 
-			&::before {
-				content: '';
+			@media (min-width: 1280px) {
+				padding: 10px 15px;
 				position: absolute;
-				top: -20px;
-				left: 0;
-				display: block;
-				width: 100%;
-				height: 40px;
+				top: 40px;
+				border: 1px solid #d9d9d9;
+				&::before {
+					content: '';
+					position: absolute;
+					top: -20px;
+					left: 0;
+					display: block;
+					width: 100%;
+					height: 40px;
+				}
 			}
 
 		&>li {

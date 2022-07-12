@@ -54,6 +54,19 @@
 		<div class="page__scroll"></div>
 	</main>
 
+	<div id="form-callme" class="form-callme">
+		<div data-fancybox-close class="close">
+			<span></span>
+			<span></span>
+		</div>
+		<div class="form-callme__body">
+			<div class="form-callme__content">
+				<div class="form-callme__title">Замовлення виклику</div>
+				<div class="form-callme__text">Оберіть регіон, залиште номер телефону, і ми Вам зателефонуємо.</div>
+			</div>
+			<?php echo do_shortcode('[contact-form-7 id="form-popup"]'); ?>
+		</div>
+	</div>
 
 	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>

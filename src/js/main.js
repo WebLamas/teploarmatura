@@ -177,6 +177,18 @@ function ready() {
 	}
 
 
+	document.addEventListener("click", ducumentActions);
 
+	function ducumentActions(e) {
+		let fancyboxBgs = document.querySelectorAll('.fancybox-bg');
+		for (const fancyboxBg of fancyboxBgs) {
+			let targetElem = e.target;
+
+			if (targetElem === fancyboxBg) {
+				console.log('rrrr')
+				$.fancybox.close()
+			}
+		}
+	}
 }
 

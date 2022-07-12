@@ -19,7 +19,7 @@
 					<?php require(THEMEPATH . 'template/segment-categories.html'); ?>
 				</div>
 			</div>
-			<div class="page__screen screen">
+			<div class="page__screen screen page__screen--blue">
 				<div class="screen__content">
 					<?php require(THEMEPATH . 'template/segment-systems.html'); ?>
 				</div>
@@ -35,7 +35,7 @@
 					<?php require(THEMEPATH . 'template/segment-sales.html'); ?>
 				</div>
 			</div>
-			<div class="page__screen screen">
+			<div class="page__screen screen page__screen--blue">
 				<div class="screen__content">
 					<?php require(THEMEPATH . 'template/segment-projects.html'); ?>
 				</div>

@@ -89,6 +89,7 @@ function ready() {
 				},
 				resize: function () {
 					setScrollType();
+					setWidthPage();
 				},
 			},
 
@@ -103,6 +104,7 @@ function ready() {
 		pageSwiper.init();
 
 
+
 		function setScrollType() {
 
 			let wrapper = document.querySelector('.page__wrapper');
@@ -111,7 +113,6 @@ function ready() {
 				pageSwiper.params.freeMode.enabled = false;
 			}
 			for (let index = 0; index < pageSwiper.slides.length; index++) {
-				console.log('rr')
 				const pageSlide = pageSwiper.slides[index];
 				const pageSlideContent = pageSlide.querySelector('.screen__content');
 				if (pageSlideContent) {
@@ -124,6 +125,14 @@ function ready() {
 				}
 			}
 		};
+		function setWidthPage() {
+			let windowWidth = window.innerWidth;
+			if (windowWidth <= 1280) {
+				pageSwiper.destroy();
+			} else {
+				pageSwiper.init();
+			}
+		}
 	}
 
 

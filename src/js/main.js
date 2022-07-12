@@ -47,7 +47,7 @@ function ready() {
 			observeSlideChildren: true,
 			spaceBetween: 40,
 
-
+			loop: true,
 		});
 	}
 	if (document.querySelector('.segment-projects__slider')) {

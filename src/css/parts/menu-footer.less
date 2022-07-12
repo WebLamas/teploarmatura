@@ -5,3 +5,30 @@
 	letter-spacing: 0.04em;
 	color: #ffffff
 }
+
+.navbar {
+}
+.menu {
+}
+.menu-footer {
+	padding: 20px 0;
+	margin: 0;
+
+	@media (min-width: 1024px) {
+		display: flex;
+		align-items: center;
+	}
+	.menu-item {
+		&:not(:last-child) {
+			margin-right: 63px;
+
+			@media (max-width: 1280px) {
+				margin-right: 30px;
+			}
+			@media (max-width: 1024px) {
+				margin-right: 0;
+				padding: 2px 0;
+			}
+		}
+	}
+}

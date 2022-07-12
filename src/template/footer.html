@@ -1,11 +1,14 @@
 <footer class="footer">
 	<div class="footer__top">
 		<div class="wrapper">
-			<div><?php echo wp_nav_menu(array('theme_location'=>'menu-footer','container'=>'nav','container_class'=>'navbar','menu_class'=>'menu menu-footer'));?></div>
+			<div>
+				<?php echo wp_nav_menu(array('theme_location'=>'menu-footer','container'=>'nav','container_class'=>'navbar','menu_class'=>'menu menu-footer'));?>
+			</div>
 		</div>
 	</div>
 	<div class="footer__main">
 		<div class="wrapper">
+			<a href="/" class="footer__logo logo"></a>
 			<div class="footer__contacts">
 				<div class="contacts">
 					<div class="contacts__caption">Центральний офіс і склад</div>
@@ -57,11 +60,12 @@
 			<div>
 				<div class="footer__copy">© 2015-2022 Теплоарматура</div>
 				<div class="footer__soc">
-					<a href="#" class="soc-blue soc-blue_fb"></a>
 					<a href="#" class="soc-blue soc-blue_yt"></a>
+					<a href="#" class="soc-blue soc-blue_fb"></a>
 				</div>
 			</div>
 			<div class="weblamas">
+				<span>Розробка сайту: </span>
 				<a href="https://weblamas.com/" rel="nofollow">WebLamas</a>
 			</div>
 		</div>

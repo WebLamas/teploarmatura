@@ -45,12 +45,15 @@
 					<?php require(THEMEPATH . 'template/segment-news.html'); ?>
 				</div>
 			</div>
+			<div class="page__screen screen page__screen--blue">
+				<div class="screen__content">
+					<?php require(THEMEPATH . 'template/footer.html'); ?>
+				</div>
+			</div>
 		</div>
 		<div class="page__scroll"></div>
 	</main>
 
-
-	<?php WeblamasTemplate::loadTemplate($templates); ?>
 
 	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>

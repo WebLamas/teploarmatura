@@ -1,26 +1,53 @@
 .segment-projects{
 	background: #f3f8ff;
 	@media (min-height: 780px) {
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		padding: 0;
+
 	}
 	& .wrapper {
-		display: flex;
 		position: relative;
-		padding: 154px 0 104px;
+		padding: 100px 15px 104px;
+		@media (min-width: 1280px) {
+			display: flex;
+			padding: 154px 0 104px;
+		}
+		@media (max-width: 768px) {
+			padding: 44px 15px 56px;
+		}
+
 	}
 	&__text {
 		flex-basis: 340px;
 		flex-shrink: 0;
-		padding-right: 70px;
+		@media (min-width: 1280px) {
+			padding-right: 70px;
+		}
+		& .caption-h2 {
+			@media (max-width: 768px) {
+				font-size: 26px;
+				line-height: 31px;
+			}
+		}
+		& p {
+			margin-top: 14px;
+			@media (max-width: 768px) {
+				font-size: 15px;
+				line-height: 24px;
+				margin: 12px 0 33px;
+			}
+		}
+
 	}
 
 	&__slider {
 		min-width: 0;
+		@media (max-width: 768px) {
+			margin: 0 -15px;
 
+
+			.project__caption, .project__desc, .project__link {
+				padding: 0 15px;
+			}
+		}
 		.swiper-wrapper {
 		}
 		.segment-projects__wrapper {
@@ -42,6 +69,10 @@
 		right: 40px;
 		display: flex;
 		column-gap: 10px;
+
+		@media (max-width: 768px) {
+			bottom: 20px;
+		}
 		.segment-projects__btn {
 		}
 		.arrow-slide {
@@ -70,25 +101,40 @@
 
 .project{
 	&__image {
-		background-size: 373px 280px;
-		width: 373px;
-		height: 280px;
+		padding-bottom: 74.7%;
 		margin-bottom: 24px;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 	&__caption{
 		font-weight: 700;
 		font-size: 23px;
 		color: #0061dd;
 		margin-bottom: 10px;
+
+		@media (max-width: 768px) {
+			font-size: 21px;
+			line-height: 25px;
+			margin-bottom: 8px;
+		}
 	}
 	&__desc{
 		font-size: 15px;
 		color: #595959;
 		margin-bottom: 15px;
+		@media (max-width: 768px) {
+			font-size: 14px;
+			line-height: 23px;
+		}
 	}
 	&__link{
 		font-weight: 600;
 		font-size: 16px;
 		color: #ff8303;
+
+		@media (max-width: 768px) {
+			font-size: 15px;
+			line-height: 18px;
+		}
 	}
 }

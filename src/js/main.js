@@ -52,16 +52,24 @@ function ready() {
 	}
 	if (document.querySelector('.segment-projects__slider')) {
 		let segmentProjectsSlider = new Swiper(".segment-projects__slider", {
-			slidesPerView: 2,
 			watchOverflow: true,
 			speed: 800,
 			observer: true,
 			observeParents: true,
 			observeSlideChildren: true,
-			spaceBetween: 40,
 			navigation: {
 				nextEl: ".segment-projects .arrow-next",
 				prevEl: ".segment-projects .arrow-prev",
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 40,
+				},
 			},
 		});
 	}

@@ -144,6 +144,27 @@ function ready() {
 	}
 
 
+	if (document.querySelector('.news-slider')) {
+		let newsSlider = new Swiper(".news-slider", {
+			wrapperClass: "items__wrapper",
+			slideClass: "news-slide",
+			watchOverflow: true,
+			slidesPerView: 1,
+			spaceBetween: 20,
+			speed: 800,
+			observer: true,
+			observeParents: true,
+			observeSlideChildren: true,
+			autoHeight: true,
+			navigation: {
+				nextEl: ".news-slider .arrow-next",
+				prevEl: ".news-slider .arrow-prev",
+			},
+
+		});
+
+
+	}
 
 	let burgerBtns = [...document.querySelectorAll(".burger")];
 	let body = document.querySelector("body");

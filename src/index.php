@@ -40,6 +40,11 @@
 					<?php require(THEMEPATH . 'template/segment-projects.html'); ?>
 				</div>
 			</div>
+			<div class="page__screen screen">
+				<div class="screen__content">
+					<?php require(THEMEPATH . 'template/segment-news.html'); ?>
+				</div>
+			</div>
 		</div>
 		<div class="page__scroll"></div>
 	</main>

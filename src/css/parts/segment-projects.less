@@ -62,39 +62,45 @@
 
 
 	}
-	&__paginations {
-		z-index: 20;
-		position: absolute;
-		bottom: 84px;
-		right: 40px;
-		display: flex;
-		column-gap: 10px;
-
+	&__navinations {
 		@media (max-width: 768px) {
 			bottom: 20px;
 		}
-		.segment-projects__btn {
-		}
-		.arrow-slide {
-			cursor: pointer;
-			display: block;
-			width: 30px;
-			height: 30px;
-			border: 1px solid #0061DD;
-			transform: matrix(-1, 0, 0, 1, 0, 0);
-			background-color: #E2EEFF;
-		}
-		.arrow-prev {
-			background: url(../images/sprite.svg) -163px -323px;
-		}
-		.arrow-next {
-			background: url(../images/sprite.svg) -133px -323px;
-		}
-		.swiper-button-disabled {
-			background-color: transparent;
-		}
+
 	}
 
+}
+
+
+.navinations {
+	z-index: 20;
+	position: absolute;
+	bottom: 84px;
+	right: 40px;
+	display: flex;
+	column-gap: 10px;
+
+	@media (max-width: 768px) {
+		bottom: 20px;
+	}
+	.arrow-slide {
+		cursor: pointer;
+		display: block;
+		width: 30px;
+		height: 30px;
+		border: 1px solid #0061DD;
+		transform: matrix(-1, 0, 0, 1, 0, 0);
+		background-color: #E2EEFF;
+	}
+	.arrow-prev {
+		background: url(../images/sprite.svg) -163px -323px;
+	}
+	.arrow-next {
+		background: url(../images/sprite.svg) -133px -323px;
+	}
+	.swiper-button-disabled {
+		background-color: transparent;
+	}
 }
 
 

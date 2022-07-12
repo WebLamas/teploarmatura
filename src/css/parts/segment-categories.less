@@ -7,6 +7,15 @@
 		align-items: center;
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
+
+		@media (max-width: 1024px) {
+			grid-template-columns: repeat(3, 1fr);
+			row-gap: 20px;
+		}
+		@media (max-width: 630px) {
+			grid-template-columns: repeat(2, 1fr);
+			padding: 5px 0;
+		}
 	}
 }
 
@@ -21,6 +30,13 @@
 	letter-spacing: 0.04em;
 	color: #0061dd;
 	text-decoration: none;
+
+	@media (max-width: 630px) {
+		font-size: 12px;
+		line-height: 14px;
+		padding-bottom: 4px;
+		padding-top: 10px;
+	}
 	&:not(:last-child) {
 		border-right: 1px solid #E2EEFF;
 	}
@@ -30,6 +46,11 @@
 		width: 77px;
 		height: 77px;
 		margin-bottom: 8px;
+
+		@media (max-width: 630px) {
+			zoom: 0.714;
+			margin-bottom: 12px;
+		}
 	}
 	&_water:before{
 		background: url(../images/sprite.svg) -9px -9px;

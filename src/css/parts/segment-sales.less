@@ -1,10 +1,21 @@
 .segment-sales{
 	background: #ffffff;
+	@media (min-height: 780px) {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0;
+	}
 	@media (min-width: 780px) {
 		height: 100%;
 	}
 	& .wrapper {
 		padding: 90px 0;
+		width: 100%;
+		@media (max-width: 768px) {
+			padding: 40px 0 0 0;
+		}
 	}
 }
 
@@ -12,23 +23,55 @@
 	text-decoration: none;
 	display: flex;
 	background: #0061dd;
+
+	&:nth-child(2n) {
+		.sales__image {
+			@media (min-width: 768px) {
+				order: -1;
+			}
+		}
+	}
+	@media (max-width: 768px) {
+		flex-direction: column-reverse;
+	}
 	&:not(:last-child) {
 		margin-bottom: 70px;
+
+		@media (max-width: 768px) {
+			margin-bottom: 40px;
+		}
 	}
 	& .sales__caption,
 	& .sales__desc,
 	& .sales__button {
 		margin-left: 60px;
+		margin-right: 15px;
+
+		@media (max-width: 1024px) {
+			margin-left: 15px;
+		}
 	}
 	&__text {
 		flex-basis: 100%;
 		padding: 47px 0;
+
+		@media (max-width: 768px) {
+			padding: 30px 0 35px;
+			text-align: center;
+		}
+
 	}
 	&__caption{
 		font-weight: 700;
 		font-size: 33px;
 		color: #ffffff;
 		margin-bottom: 12px;
+
+		@media (max-width: 768px) {
+			font-size: 24px;
+			line-height: 29px;
+			margin-bottom: 5px;
+		}
 	}
 	&__desc{
 		font-weight: 500;
@@ -37,15 +80,29 @@
 		letter-spacing: 0.04em;
 		color: #ffffff;
 		margin-bottom: 26px;
+
+		@media (max-width: 768px) {
+			font-size: 13px;
+			line-height: 18px;
+			margin-bottom: 20px;
+		}
 	}
 	&__button {
 		background: #FF8303;
 		padding: 18px 45px;
+		@media (max-width: 768px) {
+			font-size: 14px;
+			line-height: 17px;
+			padding: 14px 31px;
+		}
 	}
 	&__image {
 		flex-basis: 100%;
 		background-repeat: no-repeat;
 		background-size: cover;
+		@media (max-width: 768px) {
+			padding-bottom: 44.5%;
+		}
 	}
 	&_orange {
 

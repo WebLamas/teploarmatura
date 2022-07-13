@@ -30,6 +30,26 @@
 	& a {
 		white-space: nowrap;
 		text-decoration: none;
+
+	}
+	& > a {
+		padding: 15px 0;
+	}
+
+	&.menu-item-has-children {
+
+		& > a {
+			display: flex;
+			align-items: center;
+			&::after {
+				content: '';
+				background: url(../images/sprite.svg) -82px -334px;
+				display: block;
+				height: 6.54px;
+				width: 7.07px;
+				margin-left: 9px;
+			}
+		}
 	}
 	@media (any-hover: hover) {
 		&:hover {

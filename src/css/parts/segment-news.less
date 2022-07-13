@@ -57,6 +57,10 @@
 	& .news-slide {
 		height: max-content;
 		flex-shrink: 0;
+
+		@media (max-width: 768px) {
+    		background: #0061dd;
+		}
 		.items__wrapper {
 			display: flex;
 
@@ -76,6 +80,11 @@
 		color: #0061DD;
 		margin-bottom: 7px;
 		margin-top: 21px;
+
+		@media (max-width: 768px) {
+			color: #fff;
+			margin-top: 15px;
+		}
 	}
 	&__desc{
 		font-family: 'Gilroy';
@@ -84,6 +93,10 @@
 		font-size: 14px;
 		line-height: 157%;
 		color: #595959;
+		@media (max-width: 768px) {
+			color: #fff;
+			margin-bottom: 15px;
+		}
 	}
 	&__image {
 		padding-bottom: 59%;
@@ -122,6 +135,7 @@
 	&__caption{
 		font-weight: 600;
 		font-size: 18px;
+		line-height: 128%;
 		color: #ffffff;
 	}
 

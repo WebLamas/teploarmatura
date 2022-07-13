@@ -47,8 +47,12 @@
 	}
 	@media (min-width: 1280px) {
 		&:nth-child(3n) {
-			grid-template-columns: 70px max-content 1fr;
+			grid-template-columns: 90px max-content 1fr;
 		}
+
+		&:nth-child(3n+2){
+				grid-template-columns: 100px max-content 1fr;
+			}
 	}
 	&__num{
 		font-weight: 900;
@@ -96,6 +100,7 @@
 	}
 	&__desc{
 		font-size: 16px;
+		line-height: 125%;
 		grid-area: d;
 		max-width: 210px;
 		@media (max-width: 630px) {

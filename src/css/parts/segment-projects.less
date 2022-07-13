@@ -16,6 +16,12 @@
 
 	}
 	&__text {
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 159%;
+		color: #333333;
 		flex-basis: 340px;
 		flex-shrink: 0;
 		@media (min-width: 1280px) {
@@ -102,6 +108,13 @@
 		background-color: transparent;
 	}
 }
+.navinations-projects {
+	right: 0;
+	.arrow-slide {
+		opacity: 0.5;
+	}
+}
+
 
 
 
@@ -127,16 +140,29 @@
 	&__desc{
 		font-size: 15px;
 		color: #595959;
-		margin-bottom: 15px;
+		margin-bottom: 8px;
+		line-height: 153%;
 		@media (max-width: 768px) {
 			font-size: 14px;
 			line-height: 23px;
 		}
 	}
 	&__link{
+		text-decoration: none;
 		font-weight: 600;
 		font-size: 16px;
 		color: #ff8303;
+		display: flex;
+		align-items: center;
+
+		&::after {
+			content: '';
+			background: url(../images/sprite.svg) -113px -333px;
+			display: block;
+			height: 9.04px;
+			width: 7.07px;
+			margin-left: 9px;
+		}
 
 		@media (max-width: 768px) {
 			font-size: 15px;

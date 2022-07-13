@@ -160,7 +160,6 @@ function ready() {
 				nextEl: ".news-slider .arrow-next",
 				prevEl: ".news-slider .arrow-prev",
 			},
-
 		});
 
 

@@ -8,8 +8,9 @@
 }
 
 .brands-count{
+	text-decoration: none;
 	background: #FF8303;
-	padding: 15px 13px;
+	padding: 23px 13px;
 	z-index: 20;
 	margin-right: 35px;
 	@media (max-width: 768px) {
@@ -20,7 +21,7 @@
 		text-align: center;
 		font-weight: 600;
 		font-size: 37px;
-		line-height: 100%;
+		line-height: 62%;
 		margin-bottom: 8px;
 		color: #ffffff;
 		@media (max-width: 768px) {
@@ -33,6 +34,7 @@
 		font-weight: 600;
 		text-transform: uppercase;
 		font-size: 15px;
+		line-height: 153%;
 		letter-spacing: 0.04em;
 		color: #ffffff;
 
@@ -64,6 +66,22 @@
 	.swiper-wrapper {
 	}
 	.swiper-slide {
+
+		&:hover {
+
+			& img {
+				filter: grayscale(0);
+				-webkit-filter: grayscale(0);
+			}
+		}
+		& img {
+			-webkit-transition: all 0.3s ease 0s;
+			-o-transition: all 0.3s ease 0s;
+			transition: all 0.3s ease 0s;
+			filter: grayscale(1);
+			-webkit-filter: grayscale(1);
+			height: 38px;
+		}
 	}
 	.segment-partners__slide {
 		max-width: max-content;

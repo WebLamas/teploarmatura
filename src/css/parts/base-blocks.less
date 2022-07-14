@@ -400,3 +400,53 @@ textarea{
 		}
 	}
 }
+
+
+
+
+
+@media (min-width: 1280px) {
+
+
+	.screen-main {
+
+
+		.screen__content {
+			display: contents;
+		}
+		.segment-main {
+			display: flex;
+			align-items: center;
+			flex: 1 1 100%;
+		}
+	}
+
+	.screen-advantages {
+		.screen__content {
+			display: contents;
+
+			&>*{
+				margin-top: auto;
+			}
+		}
+	}
+
+	.screen-footer {
+
+		.screen__content {
+			display: contents;
+		}
+		.footer {
+			height: 100%;
+		}
+		.footer__main {
+			flex: 1 1 100%;
+			display: flex;
+			align-items: center;
+			& .wrapper {
+				width: 100%;
+				height: max-content;
+			}
+		}
+	}
+}

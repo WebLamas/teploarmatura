@@ -1,6 +1,7 @@
 .segment-main{
 	background: linear-gradient(90deg, #0061DD 0%, #4C90E7 100%); 
 	.wrapper{
+		width:100%;
 		display:flex;
 		align-items:center;
 		justify-content: space-between;
@@ -16,9 +17,14 @@
 	}
 	&__text{
 		max-width:470px;
+		padding-right:20px;
 	}
 	&__image{
 		
+	}
+	&__mob-button{
+		display:none;
+		min-width: 185px;
 	}
 }
 
@@ -44,8 +50,57 @@
 	}
 	&__central{
 		width:500px;
-		height:526px;
+		height:490px;
 		background:url(../images/house.png) no-repeat center top/contain;
 		margin:0 10px;
 	}
+}
+
+
+@media (max-width: 1279px) {
+	.segment-main{
+		.wrapper{
+			box-sizing:border-box;
+			padding: 30px 15px;
+		}
+		&__image{
+			zoom:0.8;
+		}
+	}
+}
+
+@media (max-width: 1023px) {
+	
+	.segment-main{
+		.wrapper{
+			flex-direction: column-reverse;
+			text-align: center;
+			padding: 30px 15px 50px;
+		}
+		.button{
+			display:none;
+			&.segment-main__mob-button{ 
+				display: inline-block;
+			}	
+		} 
+		&__h1{
+			margin: 20px 0 25px;
+		}
+	}
+}
+
+@media (max-width: 639px) {
+	.segment-main{ 
+		.wrapper{
+			padding: 25px 15px 40px;
+		}
+		&__image{	
+			zoom: 0.47;
+		}
+		&__h1{
+			font-size:24px;
+			margin:20px 0;
+		}
+	}
+	
 }

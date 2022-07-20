@@ -43,11 +43,16 @@ function ready() {
 			observer: true,
 			observeParents: true,
 			observeSlideChildren: true,
-			spaceBetween: 40,
+			spaceBetween: 30,
 			autoplay: {
 				delay: 1000,
 			},
 			loop: true,
+			breakpoints: {
+				640: { 
+					spaceBetween: 40,
+				},
+			}
 		});
 	}
 	if (document.querySelector('.segment-projects__slider')) {

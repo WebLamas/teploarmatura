@@ -1,16 +1,22 @@
 .segment-partners{
 	background: #F3F8FF;
 	.wrapper {
+		display: flex;
+		align-items: center;
+		padding: 30px 40px;
 		@media (max-width: 1280px) {
-			padding: 30px 15px !important;
+			padding: 30px 15px ;
+		}
+		@media (max-width: 639px) {
+			padding:15px;
 		}
 	}
 }
-
+ 
 .brands-count{
 	text-decoration: none;
 	background: #FF8303;
-	padding: 23px 13px;
+	padding: 20px 13px;
 	z-index: 20;
 	margin-right: 35px;
 	line-height: 1;
@@ -25,8 +31,7 @@
 		margin-bottom: 8px;
 		color: #ffffff;
 		@media (max-width: 768px) {
-			font-size: 32px;
-			line-height: 23px;
+			font-size: 32px; 
 		}
 	}
 	&__desc{
@@ -38,8 +43,7 @@
 		color: #ffffff;
 
 		@media (max-width: 768px) {
-			font-size: 13px;
-			line-height: 23px;
+			font-size: 13px; 
 
 		}
 	}
@@ -47,17 +51,7 @@
 
 
 }
-.segment-partners {
-	& .wrapper {
-		display: flex;
-		align-items: center;
-		padding: 30px 0;
-	}
-	&__num {
-	}
-	&__slider {
-	}
-}
+
 
 .slider-segment-partners {
 	min-width: 0;
@@ -80,6 +74,9 @@
 			filter: grayscale(1);
 			-webkit-filter: grayscale(1);
 			height: 38px;
+			@media (max-width: 767px) {
+				height: 34px;
+			}
 		}
 	}
 	.segment-partners__slide {

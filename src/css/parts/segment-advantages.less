@@ -1,28 +1,36 @@
 .segment-advantages{
 	background: #ffffff;
-	padding: 115px 0 90px;
+	padding: 90px 0;
 
+	@media (max-width: 1279px) { 
+	}
 	@media (max-width: 1023px) {
-		padding: 80px 0 50px;
+		padding: 50px 0;
 	}
 	@media (max-width: 639px) {
-		padding: 39px 0 45px;
+		padding: 40px 0 45px;
 	}
 	& .wrapper {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		row-gap: 65px;
+		row-gap: 90px;
 
 		@media (max-width: 1279px) {
-			grid-template-columns: repeat(2, 1fr);
-			column-gap: 30px;
+			column-gap: 20px;
 			justify-items: center;
+			row-gap: 65px;
+		}
+		@media (max-width: 1023px) {
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 70px;
+			
 		}
 		@media (max-width: 767px) {
 			grid-template-columns: repeat(1, 1fr);
 			justify-items: stretch;
 			padding: 0 35px;
-			row-gap: 50px;
+			row-gap: 50px; 
+			max-width: 330px;
 		}
 	}
 }
@@ -31,15 +39,17 @@
 	display: grid;
 	align-items: center;
 	grid-template-columns: 158px max-content 1fr;
-	row-gap: 16px;
+	row-gap: 10px;
 	grid-template-areas:
 	"a b c"
 	". d d";
-
+	line-height: 1; 
+	margin:auto;
+	width:100%;
 	@media (max-width: 1279px) {
 		grid-template-columns: max-content max-content;
 		row-gap: 0;
-		column-gap: 24px;
+		column-gap: 20px;
 		grid-template-areas:
 		"b a"
 		". c"
@@ -53,7 +63,7 @@
 		&:nth-child(3n+2){
 				grid-template-columns: 100px max-content 1fr;
 			}
-	}
+	} 
 	&__num{
 		font-weight: 900;
 		font-size: 51px;
@@ -66,8 +76,7 @@
 			text-align: start;
 		}
 		@media (max-width: 639px) {
-			font-size: 40px;
-			line-height: 50px;
+			font-size: 40px; 
 		}
 	}
 	&__ico{
@@ -94,8 +103,7 @@
 			padding-bottom: 9px;
 		}
 		@media (max-width: 639px) {
-			font-size: 26px;
-			line-height: 119%;
+			font-size: 26px; 
 		}
 	}
 	&__desc{
@@ -104,8 +112,7 @@
 		grid-area: d;
 		max-width: 210px;
 		@media (max-width: 639px) {
-			font-size: 15px;
-			line-height: 133%;
+			font-size: 15px; 
 		}
 
 		@media (min-width: 1280px) {

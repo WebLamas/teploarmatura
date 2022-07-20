@@ -11,10 +11,15 @@
 		height: 100%;
 	}
 	& .wrapper {
-		padding: 90px 0;
-		width: 100%;
-		@media (max-width: 767px) {
-			padding: 40px 0 0 0;
+		padding: 90px 40px; 
+		@media (max-width: 1279px) {
+			padding:90px 15px;
+		}
+		@media (max-width: 1023px) {
+			padding:60px 15px;
+		}
+		@media (max-width: 639px) {
+			padding:50px 0;
 		}
 	}
 }
@@ -23,36 +28,43 @@
 	text-decoration: none;
 	display: flex;
 	background: #0061dd; 
+	&:hover{
+		opacity:1;
+		@media (min-width: 1280px) {
+			.sales__image{
+				transform: scale(1.1);
+			}
+		}
+	}
 	&:nth-child(2n) {
 		.sales__image {
-			@media (min-width: 768px) {
+			@media (min-width: 1023px) {
 				order: -1;
 			}
 		}
 	}
-	@media (max-width: 767px) {
+	@media (max-width: 1023px) {
 		flex-direction: column-reverse;
+	}
+	@media (max-width: 639px) {
+		max-width: 400px;
+		margin: auto;
 	}
 	&:not(:last-child) {
 		margin-bottom: 70px; 
-		@media (max-width: 767px) {
-			margin-bottom: 40px;
-		}
-	}
-	& .sales__caption,
-	& .sales__desc,
-	& .sales__button {
-		margin-left: 60px;
-		margin-right: 15px; 
 		@media (max-width: 1023px) {
-			margin-left: 15px;
+			margin-bottom: 50px;
 		}
-	}
+	} 
 	&__text {
-		flex-basis: 100%;
-		padding: 47px 0; 
-		@media (max-width: 767px) {
-			padding: 30px 0 35px;
+		flex-basis: 50%;
+		padding: 55px 15px 55px 60px; 
+		box-sizing: border-box;
+		@media (max-width: 1279px) {
+			padding-left:40px;
+		}
+		@media (max-width: 1023px) {
+			padding: 35px 15px;
 			text-align: center;
 		}
 
@@ -62,10 +74,9 @@
 		font-size: 33px;
 		color: #ffffff;
 		margin-bottom: 12px; 
-		@media (max-width: 767px) {
-			font-size: 24px;
-			line-height: 29px;
-			margin-bottom: 5px;
+		@media (max-width: 639px) {
+			font-size: 24px; 
+			margin-bottom: 10px;
 		}
 	}
 	&__desc{
@@ -75,17 +86,17 @@
 		letter-spacing: 0.04em;
 		color: #ffffff;
 		margin-bottom: 26px; 
-		@media (max-width: 767px) {
-			font-size: 13px;
-			line-height: 18px;
+		@media (max-width: 639px) {
+			font-size: 13px; 
 			margin-bottom: 20px;
 		}
 	} 
 	&__image {
-		flex-basis: 100%;
+		flex-basis: 50%;
 		background-repeat: no-repeat;
 		background-size: cover;
-		@media (max-width: 767px) {
+		transition: .2s linear;
+		@media (max-width: 1023px) {
 			padding-bottom: 44.5%;
 		}
 	}

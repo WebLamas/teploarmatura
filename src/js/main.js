@@ -1,7 +1,5 @@
 @@include("./lib/jquery.fancybox.min.js")
-@@include("./lib/wpcf7.js")
-@@include("./lib/select.js")
-@@include("./lib/dynamic_adapt.js")
+@@include("./lib/wpcf7.js")  
 /*end of inludes*/
 
 

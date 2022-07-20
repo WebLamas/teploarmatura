@@ -68,10 +68,9 @@
 		}
 	}
 	&__logo {
-		margin-bottom: 30px;
-		@media (min-width: 768px) {
-			zoom: 1.295;
-			width: 333.01px;
+		margin-bottom: 40px;
+		@media (min-width: 768px) { 
+			width: 334px;
 			height: 44px;
 		}
 		@media (max-width: 630px) {
@@ -80,8 +79,8 @@
 	}
 	&__contacts {
 		display: grid;
-		grid-template-columns: 37.08% 37.08% 25.83%;
-		row-gap: 60px;
+		grid-template-columns: repeat(3,1fr); 
+		grid-gap: 60px 135px;
 
 		@media (max-width: 1280px) {
 			grid-template-columns: repeat(2, 1fr);

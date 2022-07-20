@@ -7,13 +7,13 @@
 		justify-content: center;
 		padding: 0;
 	}
-	@media (min-width: 780px) {
+	@media (min-width: 768px) {
 		height: 100%;
 	}
 	& .wrapper {
 		padding: 90px 0;
 		width: 100%;
-		@media (max-width: 768px) {
+		@media (max-width: 767px) {
 			padding: 40px 0 0 0;
 		}
 	}
@@ -22,8 +22,7 @@
 .sales{
 	text-decoration: none;
 	display: flex;
-	background: #0061dd;
-
+	background: #0061dd; 
 	&:nth-child(2n) {
 		.sales__image {
 			@media (min-width: 768px) {
@@ -31,13 +30,12 @@
 			}
 		}
 	}
-	@media (max-width: 768px) {
+	@media (max-width: 767px) {
 		flex-direction: column-reverse;
 	}
 	&:not(:last-child) {
-		margin-bottom: 70px;
-
-		@media (max-width: 768px) {
+		margin-bottom: 70px; 
+		@media (max-width: 767px) {
 			margin-bottom: 40px;
 		}
 	}
@@ -45,17 +43,15 @@
 	& .sales__desc,
 	& .sales__button {
 		margin-left: 60px;
-		margin-right: 15px;
-
-		@media (max-width: 1024px) {
+		margin-right: 15px; 
+		@media (max-width: 1023px) {
 			margin-left: 15px;
 		}
 	}
 	&__text {
 		flex-basis: 100%;
-		padding: 47px 0;
-
-		@media (max-width: 768px) {
+		padding: 47px 0; 
+		@media (max-width: 767px) {
 			padding: 30px 0 35px;
 			text-align: center;
 		}
@@ -65,9 +61,8 @@
 		font-weight: 700;
 		font-size: 33px;
 		color: #ffffff;
-		margin-bottom: 12px;
-
-		@media (max-width: 768px) {
+		margin-bottom: 12px; 
+		@media (max-width: 767px) {
 			font-size: 24px;
 			line-height: 29px;
 			margin-bottom: 5px;
@@ -79,38 +74,23 @@
 		font-size: 15px;
 		letter-spacing: 0.04em;
 		color: #ffffff;
-		margin-bottom: 26px;
-
-		@media (max-width: 768px) {
+		margin-bottom: 26px; 
+		@media (max-width: 767px) {
 			font-size: 13px;
 			line-height: 18px;
 			margin-bottom: 20px;
 		}
-	}
-	&__button {
-		text-transform: uppercase;
-		background: #FF8303;
-		padding: 18px 45px;
-		@media (max-width: 768px) {
-			font-size: 14px;
-			line-height: 17px;
-			padding: 14px 31px;
-		}
-	}
+	} 
 	&__image {
 		flex-basis: 100%;
 		background-repeat: no-repeat;
 		background-size: cover;
-		@media (max-width: 768px) {
+		@media (max-width: 767px) {
 			padding-bottom: 44.5%;
 		}
 	}
-	&_orange {
-
-		background: #FF8303;
-		& .sales__button {
-			background: #0061DD;
-		}
+	&_orange { 
+		background: #FF8303; 
 	}
 }
 

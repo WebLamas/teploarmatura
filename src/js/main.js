@@ -46,7 +46,9 @@ function ready() {
 			observeParents: true,
 			observeSlideChildren: true,
 			spaceBetween: 40,
-
+			autoplay: {
+				delay: 1000,
+			},
 			loop: true,
 		});
 	}
@@ -148,9 +150,9 @@ function ready() {
 		let newsSlider = new Swiper(".news-slider", {
 			wrapperClass: "items__wrapper",
 			slideClass: "news-slide",
-			watchOverflow: true,
-			slidesPerView: 1,
+			watchOverflow: true, 
 			spaceBetween: 20,
+			slidesPerView: 1,
 			speed: 800,
 			observer: true,
 			observeParents: true,
@@ -159,6 +161,16 @@ function ready() {
 			navigation: {
 				nextEl: ".news-slider .arrow-next",
 				prevEl: ".news-slider .arrow-prev",
+			},
+			breakpoints: {
+				639: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				1023: {
+					slidesPerView: 3,
+					spaceBetween: 40,
+				},
 			},
 		});
 

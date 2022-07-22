@@ -1,5 +1,7 @@
 @@include("./lib/jquery.fancybox.min.js")
+@@include("./lib/jquery.spincrement.min.js")
 @@include("./lib/wpcf7.js")  
+@@include("./lib/jquery.viewportchecker.js");
 /*end of inludes*/
 
 
@@ -8,6 +10,9 @@ $(document).ready(function () {
 	$(window).on("wl_resize", function (event, ww) {
 		console.log("some_code");
 	});
+	
+	/*main menu*/
+	
 	$(window).on("wl_resize", function (t, e) {
 		$(".menu-main .sub-menu").stop().slideUp("fast"),
 			1279 < e ? $(".menu-main").show() : $(".menu-main").hide(),
@@ -27,14 +32,41 @@ $(document).ready(function () {
 		}, function () {
 			ww < 1280 || $(this).find(".sub-menu").stop().slideUp("fast")
 		}),
-		$(".sub-menu").hide()
-
+		$(".sub-menu").hide();
+	
+	/*language select*/
+	
+	$('.language').hover(function(){
+		if(1280 <= ww){
+			$('.language__list').stop().slideDown();
+		}
+	},function(){
+		$('.language__list').stop().slideUp();
+	});
+	$('.language').click(function(){
+		if(1280 > ww){
+			$('.language__list').stop().slideToggle();
+		}
+	});
+	 
+	/*spincrement*/
+	$('.advantage__num').viewportChecker({ 
+		offset: 100,
+		classToAdd: 'visible',
+		callbackFunction: function(el){
+			$(el).spincrement({ 
+				thousandSeparator: " ",
+				duration: 1500
+			});
+		}
+	});
 });
 
 
 document.addEventListener("DOMContentLoaded", ready);
 
 function ready() {
+
 	if (document.querySelector('.slider-segment-partners')) {
 		let sliderSegmentPartners = new Swiper(".slider-segment-partners", {
 			slidesPerView: 'auto',

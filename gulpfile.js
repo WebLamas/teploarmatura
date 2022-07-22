@@ -90,7 +90,6 @@ gulp.task('js:build', function () {
         .pipe(sourcemaps.init()) //Инициализируем sourcemap
         .pipe(sourcemaps.write()) //Пропишем карты
         .pipe(gulp.dest(path.build.js)); //Выплюнем готовый файл в build
-       // .pipe(reload({stream: true})); //И перезагрузим сервер
 });
 gulp.task('js:deploy', function () {
    return gulp.src(path.src.js) //Найдем наш main файл

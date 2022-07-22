@@ -45,7 +45,7 @@ class WeblamasTemplate{
 	static function get_subtemplates(){
 		return array();
 	}
-	static function loadTemplate($templates){
+	static function loadTemplate($templates=[]){
 		global $script_name;
 		$s=file_get_contents(__DIR__.$script_name);
 		ob_start();

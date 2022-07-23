@@ -4,7 +4,6 @@
 <html lang="ru">
 
 <head>
-	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 	<?php wp_head(); ?>
 </head>
 
@@ -26,7 +25,6 @@
 		</div>
 	</div>
 
-	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 <?php wp_footer(); ?>
 

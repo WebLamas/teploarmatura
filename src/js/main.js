@@ -1,3 +1,4 @@
+@@include("../../node_modules/swiper/swiper-bundle.min.js")
 @@include("./lib/jquery.fancybox.min.js")
 @@include("./lib/jquery.spincrement.min.js")
 @@include("./lib/wpcf7.js")  

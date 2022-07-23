@@ -204,7 +204,7 @@ body{
 		padding-bottom: 59%; 
 		background-size: cover;
 		background-repeat: no-repeat;
-		display: block;
+		display: block; 
 	}
 	&__text{
 		background:#fff;
@@ -247,7 +247,7 @@ body{
 		color: #0061dd;
 		max-width: fit-content;
 		margin-bottom: 10px;
-	}
+	} 
 	/*page prices*/
 	&_file &__link:after{
 		content: '';
@@ -288,6 +288,10 @@ body{
 		font-size: 16px;
 		margin: 0;
 	}
+	/*page projects*/
+	&_project &__image{
+		padding-bottom: 74.7%; 
+	}   
 	@media (max-width: 639px) { 
 		&__desc{
 			font-size:14px;
@@ -312,6 +316,113 @@ body{
 		box-sizing: border-box;
 		line-height: 1.2;
 		color: #0061dd;
+	}
+}
+
+/*projects page*/
+
+.plate-wr_project{
+	@media (min-width: 1280px) {
+		grid-template-columns: repeat(3,1fr); 
+	}
+} 
+
+.pr-window{ 
+	max-width:720px;
+	min-width:330px;
+	width:100%;
+	box-sizing: border-box;
+	&__image{
+		background: url(../images/project-01.png) no-repeat center/cover; 
+		padding-bottom: 40%; 
+	} 
+	&__cat-wr{ 
+		display:flex;
+		zoom: 0.7;
+		margin-bottom:20px;
+		border-bottom: 1px solid #e2eeff;
+		justify-content: center;
+	}
+	&__cat{  
+		padding:20px;
+		&:not(:last-child){ 
+			border-right:1px solid #e2eeff;
+		}
+		
+		&:before{
+			content:'';
+			width: 77px;
+			height: 77px; 
+			display:block;
+		}
+		&_water:before{
+			background: url(../images/sprite.svg) -9px -9px;
+		}
+		&_gas:before{
+			background: url(../images/sprite.svg) -114px -9px;
+		}
+		&_sewage:before{
+			background: url(../images/sprite.svg) -219px -9px;
+		}
+		&_heat:before{
+			background: url(../images/sprite.svg) -324px -9px;
+		}
+		&_plumb:before{
+			background: url(../images/sprite.svg) -429px -9px;
+		}
+		&_fire:before{
+			background: url(../images/sprite.svg) -534px -9px;
+		}
+	}
+	&__caption{
+		margin: 20px 0 10px;
+		font-size: 24px;
+		color: #0061dd;
+		line-height: 1.2;
+		font-weight: 600;
+	}
+	&__loc{
+		color: #ff8303;
+		display: flex;
+		align-items: center;
+		font-weight: 600;
+		font-size: 16px;
+		&:before {
+			content: '';
+			background: url(../images/sprite.svg) -304px -328px;
+			display: block;
+			height: 20px;
+			width: 16px;
+			margin-right: 7px;
+		}
+	}
+	&__desc{
+		margin-top:10px;
+		&>:first-child {
+			margin-top: 0;
+		}
+	}
+	&__brands{
+		margin-top:30px;
+	}
+	ul,ol{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+	}
+	@media (max-width: 639px) {
+		&__caption{
+			font-size: 22px; 
+		}
+		ul,ol{
+			display: grid;
+			grid-template-columns: repeat(1,1fr);
+		}
+		&__cat-wr{
+			zoom:0.5;
+		}
+		&__cat{
+			padding:10px;
+		}
 	}
 }
 

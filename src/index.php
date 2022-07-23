@@ -12,10 +12,6 @@
 	<?php WeblamasTemplate::loadTemplate();?>
 
 	<div id="form-callme" class="form-callme">
-		<div data-fancybox-close class="close">
-			<span></span>
-			<span></span>
-		</div>
 		<div class="form-callme__body">
 			<div class="form-callme__content">
 				<div class="form-callme__title">Замовлення виклику</div>
